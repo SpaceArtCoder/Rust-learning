@@ -27,8 +27,8 @@ fn main() {                                         // Наиболее част
     //    println!("Чмсло не делится на 4, 3 и 2");
     //}
 
-    let condition = true;
-    let number = if condition {
+    let condition = true;                                // Так как if является выражением можно использовать его в правой 
+    let number = if condition {                          // части инструкции let
         5
     } else {
         6
