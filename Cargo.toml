@@ -1,5 +1,5 @@
 [workspace]
-members = ["branches","functions",
+members = ["branches", "fibonacci_sequence","functions",
     "guessing_game",
     "hello_cargo", "loops", "variables",
 ]
