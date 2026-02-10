@@ -30,7 +30,13 @@ fn main() {
     
         // }
 
-        
+        while count < end {
+            c = a + b;
+            a = c + b;
+            b = c + a;
+
+            println!("{}", a)
+        }
     }
 
     fib(4);
