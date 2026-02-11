@@ -1,44 +1,41 @@
 fn main() {
 
-    fn fib(end : i32) {
+    fn fib(end : i32) {                                     // Определяется тип параметра
 
-        let mut first_num = 0;
+        let mut first_num = 0;                              // Начальное значение для первого числа 
+                                                            // последовательности
+        let mut second_num = 1;                             // Начальное значение для второго числа
 
-        let mut second_num = 1;
+        let mut third_num = 0;                              // Начальное значение для третьего числа
 
-        let mut third_num;
+        let mut counter = 1;                                // Счетчик для рассчета индекса чмсла в
+                                                            // последовательности
+        while counter <= end {                              // Цикл будет выполняться до достижения
+                                                            // конечного индекса, переданного в 
+            if counter % 3 == 1 {                           // качестве аргумента вызову функции fib
+                if counter != 1 {                           // Первые два значения будут выведены 
+                    first_num = second_num + third_num;     // сразу, далее - производиться вычисление
+                }
+                println!("{}", first_num);
+            }
 
-        let mut count = 0;
+            else if counter % 3 == 2 {
+                if counter != 2 {
+                    second_num = first_num + third_num;
+                }
+                println!("{}", second_num);
+            }
 
-        // while count < end {
-        
-        //     println!("Value: {}", first_num);
-        //     count+=1;
+            else {
+                third_num = first_num + second_num;
+                println!("{}", third_num);
+            }
 
-        //     println!("Value: {}", second_num);
-        //     count+=1;
-
-        //     third_num = first_num + second_num;
-
-        //     first_num = third_num + second_num;
-
-        //     second_num = third_num + first_num;
-
-        //     println!("Value: {}", third_num);
-        //     count+=1;
-
-    
-        // }
-
-        while count < end {
-            c = a + b;
-            a = c + b;
-            b = c + a;
-
-            println!("{}", a)
+            counter += 1;                                   // После каждой итерации с проверкой значение
+                                                            // счетчика инкрементируется единицей
         }
     }
 
-    fib(4);
+    fib(19);
     
 }
