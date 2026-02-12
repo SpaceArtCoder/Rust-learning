@@ -1,5 +1,5 @@
 fn main() {
-
+/*
     fn fib(end : i32) {                                     // Определяется тип параметра
 
         let mut first_num = 0;                              // Начальное значение для первого числа 
@@ -37,5 +37,29 @@ fn main() {
     }
 
     fib(19);
-    
+*/
+
+    fn fib(end : i32) {
+
+        let mut counter = 1;
+
+        let mut a = 0;
+        let mut b = 1;
+
+        while counter <= end {
+            
+            if counter % 2 == 1 {
+                println!("{}", a);
+                a = a + b;
+            }
+
+            else {
+                println!("{}", b);
+                b = b + a;
+            }
+            counter += 1;
+        }
+    }
+
+    fib(18);
 }
