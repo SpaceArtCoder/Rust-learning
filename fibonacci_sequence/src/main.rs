@@ -1,3 +1,5 @@
+use std::io;
+
 fn main() {
 /*
     fn fib(end : i32) {                                     // Определяется тип параметра
@@ -38,7 +40,7 @@ fn main() {
 
     fib(19);
 */
-
+/*
     fn fib(end : i32) {
 
         let mut counter = 1;
@@ -62,4 +64,7 @@ fn main() {
     }
 
     fib(18);
+*/
+
+
 }
