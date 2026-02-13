@@ -66,5 +66,8 @@ fn main() {
     fib(18);
 */
 
+    loop {
+        println!("Enter the final value, please");
+    }
 
 }
