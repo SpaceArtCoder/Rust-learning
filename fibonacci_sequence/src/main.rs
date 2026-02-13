@@ -68,6 +68,11 @@ fn main() {
 
     loop {
         println!("Enter the final value, please");
+
+        let mut final_value = String::new();
+
+        io::stdin().read_line(&mut final_value)
+            .expect("filed to read the line");
     }
 
 }
