@@ -13,7 +13,7 @@ fn main() {
         let mut fin_value = String::new();                      // Переменная с начальным типом данных 
                                                                 // для конечного индекса последовательности
         io::stdin().read_line(&mut fin_value)                   // Принимается ввод значения конечного
-            .expect("filed to read the line");                  // индекса пользователем, вместе с тем,
+            .expect("Filed to read the line");                  // индекса пользователем, вместе с тем,
                                                                 // присутствует обработка ошибок
         let fin_value : i32 = fin_value.trim().parse()          // Приведение строки к числу
             .expect("Failed to convert");                       // определенного типа
