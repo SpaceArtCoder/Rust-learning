@@ -18,19 +18,29 @@ fn main() {
         let fin_value : i32 = fin_value.trim().parse()          // Приведение строки к числу
             .expect("Failed to convert");                       // определенного типа
 
-        while counter <= fin_value {
-            
-            if counter % 2 == 1 {
-                println!("{}", st_first);
+        while counter <= fin_value {                            // Цикл будет выполняться до достижения
+                                                                // счетчиком значения равного значению
+            if counter % 2 == 1 {                               // конечного числа, введенного пользова-
+                                                                // телем
+                if counter == fin_value {                       // Выведется только последнее число по-
+                    println!("{}", st_first);                   // следовательности, если оно нечетное
+                }
+                
                 st_first = st_first + st_second;
+
             }
 
             else {
-                println!("{}", st_second);
+
+                if counter == fin_value {
+                    println!("{}", st_second);                  // Выведется только последнее число по-
+                }                                               // следовательности, если оно четное
+                
                 st_second = st_second + st_first;
+
             }
-            counter += 1;
-        }
+            counter += 1;                                       // Одна итерация счетчика равна одному
+        }                                                       // индексу последовательности
     }
 
 }
