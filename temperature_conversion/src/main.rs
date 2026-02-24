@@ -3,7 +3,7 @@ use std::io;
 fn main() {
 
     loop {
-        println!("Enter the unit of measurment, please");        // Запрос единицы измерения для исходного
+        println!("Enter the unit of measurment, please (C or F)");   // Запрос единицы измерения для исходного
                                                                  // значения
 
         let mut measure = String::new();                         // Переменная будет строкой, так как
