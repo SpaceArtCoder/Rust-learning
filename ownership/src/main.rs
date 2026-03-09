@@ -58,4 +58,4 @@ fn makes_copy(some_integer: i32) {              // some_integer входит в 
     println!("{}", some_integer);
 
 }                                               // some_integer выходит из области видимости. Ничего особенного
-                                                // не происходит                       
+                                                // не происходит.                       
