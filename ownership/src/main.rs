@@ -73,5 +73,5 @@ fn gives_ownership() -> String {                   // gives_ownership перем
                                                    // функцию, которая ее вызывает
     let some_string = String::from("hello");       // some_string входит в область видимости
 
-    some_string
+    some_string                                    // some_string возвращается и выносится в вызывающую функцию
 }
