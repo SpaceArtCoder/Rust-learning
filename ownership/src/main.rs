@@ -75,3 +75,8 @@ fn gives_ownership() -> String {                   // gives_ownership перем
 
     some_string                                    // some_string возвращается и выносится в вызывающую функцию
 }
+
+fn takes_and_gives_back(a_string: String) -> String {
+
+    a_string
+}
