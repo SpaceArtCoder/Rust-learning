@@ -71,7 +71,7 @@ fn main() {                                     // Переменная еще �
 
 fn gives_ownership() -> String {                   // gives_ownership переместит свое возвращаемое значение в
                                                    // функцию, которая ее вызывает
-    let some_string = String::from("hello");
+    let some_string = String::from("hello");       // some_string входит в область видимости
 
     some_string
 }
