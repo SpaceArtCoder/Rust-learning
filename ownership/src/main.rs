@@ -76,7 +76,7 @@ fn gives_ownership() -> String {                   // gives_ownership перем
     some_string                                    // some_string возвращается и выносится в вызывающую функцию
 }
 
-fn takes_and_gives_back(a_string: String) -> String {
+fn takes_and_gives_back(a_string: String) -> String { //takes_and_gives_back возьмет String и вернет String
 
     a_string
 }
