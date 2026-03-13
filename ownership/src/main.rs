@@ -89,5 +89,5 @@ fn main() {                                     // Переменная еще �
 }
 
 fn calculate_length(s: String) -> (String, usize) {
-    let length = s.len();
+    let length = s.len();                             // len() возвращает длину экземпляра типа String
 }
