@@ -87,3 +87,7 @@ fn main() {                                     // Переменная еще �
 
     println!("Длина '{}' равна {}.", s2, len);
 }
+
+fn calculate_length(s: String) -> (String, usize) {
+    let length = s.len();
+}
