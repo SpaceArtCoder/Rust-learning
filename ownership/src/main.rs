@@ -94,8 +94,8 @@ fn main() {                                     // Переменная еще �
     println!("Длина {} равна {}.", s1, len);              // сандом
 }
 
-fn calculate_length(s: &String) -> usize {                // 
-    s.len()
+fn calculate_length(s: &String) -> usize {                // В определении s также используется амперсанд
+    s.len()                                               
 }
 
 // fn calculate_length(s: String) -> (String, usize) {
