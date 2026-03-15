@@ -94,7 +94,7 @@ fn main() {                                     // Переменная еще �
     println!("Длина {} равна {}.", s1, len);
 }
 
-fn calculate_length(s: String) -> usize {
+fn calculate_length(s: &String) -> usize {
     s.len()
 }
 
