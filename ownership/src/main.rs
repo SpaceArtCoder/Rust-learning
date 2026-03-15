@@ -90,6 +90,8 @@ fn main() {                                     // Переменная еще �
     let s1 = String::from("hello");
 
     let len = calculate_length(&s1);
+
+    println!("Длина {} равна {}.", s1, len);
 }
 
 // fn calculate_length(s: String) -> (String, usize) {
