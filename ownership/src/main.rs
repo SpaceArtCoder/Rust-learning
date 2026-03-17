@@ -123,3 +123,7 @@ fn main() {                                     // Переменная еще �
 
 }
 
+fn change(some_string: &mut String) {
+    
+}
+
