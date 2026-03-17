@@ -112,3 +112,7 @@ fn main() {                                     // Переменная еще �
     change(&s);
 
 }
+
+fn change(some_string : &String) {
+    
+}
