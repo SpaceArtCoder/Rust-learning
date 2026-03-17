@@ -109,4 +109,6 @@ fn main() {                                     // Переменная еще �
 
     let s = String::from("hello");
 
+    change(&s);
+
 }
