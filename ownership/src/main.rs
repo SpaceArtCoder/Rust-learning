@@ -114,5 +114,5 @@ fn main() {                                     // Переменная еще �
 }
 
 fn change(some_string : &String) {
-    
+    some_string.push_str(", world");
 }
