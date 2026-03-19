@@ -133,6 +133,10 @@ fn main() {                                     // Переменная еще �
                                                                // изменяемые ссылки
 
     let mut s = String::from("hello");
+
+    {
+        let r1 = &mut s;
+    }
 }
 
 // fn change(some_string: &mut String) {                       // И приняли ее с помощью some_string: &mut String
