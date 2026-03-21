@@ -157,6 +157,8 @@ fn main() {                                     // Переменная еще �
 
 fn dangle() -> &String {
     let s = String::from("hello");
+
+    &s
 }
 
 // fn change(some_string: &mut String) {                       // И приняли ее с помощью some_string: &mut String
