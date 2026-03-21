@@ -155,6 +155,10 @@ fn main() {                                     // Переменная еще �
     let reference_to_nothing = dangle();
 }
 
+fn dangle() -> &String {
+    
+}
+
 // fn change(some_string: &mut String) {                       // И приняли ее с помощью some_string: &mut String
 //     some_string.push_str(", world");
 // }
