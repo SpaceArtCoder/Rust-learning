@@ -152,8 +152,8 @@ fn main() {                                     // Переменная еще �
 
     // println!("{}, {} and {}", r1, r2, r3);
 
-    let reference_to_nothing = dangle();
-}
+    // let reference_to_nothing = dangle();
+// }
 
 // fn dangle() -> &String {
 //     let s = String::from("hello");
@@ -168,9 +168,15 @@ fn main() {                                     // Переменная еще �
 //     some_string.push_str(", world");
 // }
 
-fn no_dangle() -> String {
-    let s = String::from("hello");
+// fn no_dangle() -> String {
+//     let s = String::from("hello");
 
-    s                                                          // Чтобы избежать ошибки нужно вернуть экземпляр типа String
-                                                               // напрямую
+//     s                                                          // Чтобы избежать ошибки нужно вернуть экземпляр типа String
+//                                                                // напрямую
+// }
+
+}
+
+fn first_word(s: &String) -> usize {
+    
 }
