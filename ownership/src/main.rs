@@ -171,5 +171,5 @@ fn main() {                                     // Переменная еще �
 fn no_dangle() -> String {
     let s = String::from("hello");
 
-    
+    s
 }
