@@ -159,7 +159,8 @@ fn dangle() -> &String {
     let s = String::from("hello");
 
     &s                                                              // Возвращается ссылка на String, a
-}
+}                                                                   // Здесь s выходит из области видимости и отбрасывается.
+                                                                    // Ее память уходит.
 
 // fn change(some_string: &mut String) {                       // И приняли ее с помощью some_string: &mut String
 //     some_string.push_str(", world");
