@@ -179,7 +179,7 @@ fn main() {                                     // Переменная еще �
 
     let mut s = String::from("hello world");
 
-    let word = first_word(&s);
+    let word = first_word(&s);                                    // Переменная word получит значение 5
 
     s.clear();
 }
