@@ -175,6 +175,9 @@ fn main() {                                     // Переменная еще �
 //                                                                // напрямую
 // }
 
+
+
+    let mut s = String::from("hello world");
 }
 
 fn first_word(s: &String) -> usize {
