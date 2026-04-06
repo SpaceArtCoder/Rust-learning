@@ -216,4 +216,6 @@ fn main() {                                     // Переменная еще �
 // }
 
     let s = String::from("hello world");
+
+    let hello = &s[0..5];
 }
