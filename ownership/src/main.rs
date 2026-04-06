@@ -231,4 +231,5 @@ fn main() {                                     // Переменная еще �
     let s = String::from("hello");
 
     let slice = &s[0..2];
+    let slice = &s[..2]; 
 }
