@@ -244,4 +244,6 @@ fn main() {                                     // Переменная еще �
     let s = String::from("hello");
 
     let len = s.len();
+
+    let slice = &s[0..len];
 }
