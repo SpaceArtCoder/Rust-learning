@@ -246,4 +246,5 @@ fn main() {                                     // Переменная еще �
     let len = s.len();
 
     let slice = &s[0..len];
+    let slice = &s[..];
 }
