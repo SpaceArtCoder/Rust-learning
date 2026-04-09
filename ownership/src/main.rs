@@ -256,7 +256,7 @@ fn first_word(s: &String) -> &str {
 
     for (i, &item) bytes.iter().enumerate() {
         if iter == b' ' {
-            
+            return &s[0..1];
         }
     }
 }
