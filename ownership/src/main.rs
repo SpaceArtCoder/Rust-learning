@@ -255,8 +255,8 @@ fn first_word(s: &String) -> &str {                                    // Тип
     let bytes = s.as_bytes();
 
     for (i, &item) bytes.iter().enumerate() {
-        if iter == b' ' {
-            return &s[0..1];
+        if iter == b' ' {                                              // Здесь, индекс конца строки получается путем отыскивания первого
+            return &s[0..i];                                           // вхождения пробела
         }
     }
 
