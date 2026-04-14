@@ -252,6 +252,10 @@ fn main() {                                     // Переменная еще �
     // println!("{}", first_word(&String::from("ger erg")));
 
     let mut s = String::from("hello world");
+
+    let word = first_word(&s);
+
+    
 }
 
 fn first_word(s: &String) -> &str {                                    // Тип, обозначающий "строковый срез", записывается как &str
