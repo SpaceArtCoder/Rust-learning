@@ -288,7 +288,7 @@ fn main() {                                     // Переменная еще �
 
     let my_string_literal = "hello world";
 
-    let word = first_word(&my_string_literal[..]);
+    let word = first_word(&my_string_literal[..]);                     // first_word работает на срезах строковых литералов
     
 
 }
