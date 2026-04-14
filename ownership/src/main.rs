@@ -290,5 +290,5 @@ fn main() {                                     // Переменная еще �
 
     let word = first_word(&my_string_literal[..]);                     // first_word работает на срезах строковых литералов
     
-
+    let word = first_word(my_string_literal);
 }
