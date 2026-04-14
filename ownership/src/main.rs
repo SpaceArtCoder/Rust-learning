@@ -284,7 +284,9 @@ fn main() {                                     // Переменная еще �
 
     let my_string = String::from("hello world");
 
-    let world = first_word(&my_string[..]);
+    let world = first_word(&my_string[..]);                            
+
+    let my_string_literal = "hello world";
     
 
 }
