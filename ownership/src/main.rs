@@ -255,6 +255,8 @@ fn main() {                                     // Переменная еще �
 
     let word = first_word(&s);
 
+    s.clear();
+
     
 }
 
