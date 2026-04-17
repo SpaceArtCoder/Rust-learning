@@ -1,8 +1,8 @@
 fn main() {
-    struct User {
-        username: String,
-        email: String,
-        sign_in_count: u64,
-        active: bool,
+    struct User {                                               // Для определения структуры вводится ключевое слово struct
+        username: String,                                       // Имя труктуры, как правило, должно выразительно описывать
+        email: String,                                          // сгруппированные фрагменты данных. Затем, внутри фигурных
+        sign_in_count: u64,                                     // скобок определяются имя и тип для элементов данных, они
+        active: bool,                                           // именуются как "поля"
     }
 }
