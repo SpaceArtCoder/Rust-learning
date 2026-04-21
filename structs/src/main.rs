@@ -19,6 +19,7 @@ fn main() {
     let mut user1 = User {
         email: String::from("someone@example.com"),
         username: String::from("someusername123"),
+        active: true,
     }
 
 }
