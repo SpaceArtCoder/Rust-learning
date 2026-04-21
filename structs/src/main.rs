@@ -16,4 +16,8 @@ fn main() {
 
                                                                 // Для того чтобы получить конкретное значение из структуры,
                                                                 // используется точечная нотация. 
+    let mut user1 = User {
+        email: String::from("someone@example.com"),
+    }
+
 }
