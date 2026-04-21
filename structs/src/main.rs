@@ -18,6 +18,7 @@ fn main() {
                                                                 // используется точечная нотация. 
     let mut user1 = User {
         email: String::from("someone@example.com"),
+        username: String::from("someusername123"),
     }
 
 }
