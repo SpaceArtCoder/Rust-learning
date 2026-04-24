@@ -27,9 +27,9 @@ fn main() {
                                                                 // помощью точечной нотации, передав значение в определенное
                                                                 // поле
     
-    fn build_user(email: String, username: String) -> User {
-        User {
-            email: email,
+    fn build_user(email: String, username: String) -> User {    // Здесь build_user возвращает экземпляр структуры User с 
+        User {                                                  // заданной электронной почтой и именем пользователя
+            email: email,                                       // Поле active получает значение true, а sign_in_count - 1
             username: username,
             active: true,
             sign_in_count: 1,
