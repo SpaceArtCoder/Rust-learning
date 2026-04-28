@@ -6,33 +6,37 @@ fn main() {
         active: bool,                                           // именуются как "поля"
     };
 
-    let user1 = User {                                          // Тут происходит инстанцирование, то есть создание экз-
-        email: String::from("someone@example.com"),             // емпляра для заданной структуры. Указываются конкретные
-        username: String::from("someusername123"),              // значения для каждого поля. Внутри фигурных скобок 
-        active: true,                                           // содержатся пары ключ-значение, где ключи - это имена
-        sign_in_count: 1,                                       // полей, а значения - данные, которые будут храниться
-    };                                                           // в этих полях. При этом не нужно указывать поля в том
-                                                                // же порядке, в котором они были объявлены в структуре
+    // let user1 = User {                                          // Тут происходит инстанцирование, то есть создание экз-
+    //     email: String::from("someone@example.com"),             // емпляра для заданной структуры. Указываются конкретные
+    //     username: String::from("someusername123"),              // значения для каждого поля. Внутри фигурных скобок 
+    //     active: true,                                           // содержатся пары ключ-значение, где ключи - это имена
+    //     sign_in_count: 1,                                       // полей, а значения - данные, которые будут храниться
+    // };                                                           // в этих полях. При этом не нужно указывать поля в том
+    //                                                             // же порядке, в котором они были объявлены в структуре
 
-                                                                // Для того чтобы получить конкретное значение из структуры,
-                                                                // используется точечная нотация. 
-    let mut user1 = User {
-        email: String::from("someone@example.com"),
-        username: String::from("someusername123"),
-        active: true,
-        sign_in_count: 1,
-    };
+    //                                                             // Для того чтобы получить конкретное значение из структуры,
+    //                                                             // используется точечная нотация. 
+    // let mut user1 = User {
+    //     email: String::from("someone@example.com"),
+    //     username: String::from("someusername123"),
+    //     active: true,
+    //     sign_in_count: 1,
+    // };
 
-    user1.email = String::from("anotheremail@example.com");     // Если экземпляр изменяемый, то можно изменить значение с
-                                                                // помощью точечной нотации, передав значение в определенное
-                                                                // поле
+    // user1.email = String::from("anotheremail@example.com");     // Если экземпляр изменяемый, то можно изменить значение с
+    //                                                             // помощью точечной нотации, передав значение в определенное
+    //                                                             // поле
     
-    fn build_user(email: String, username: String) -> User {    // Здесь build_user возвращает экземпляр структуры User с 
-        User {                                                  // заданной электронной почтой и именем пользователя
-            email: email,                                       // Поле active получает значение true, а sign_in_count - 1
-            username: username,
-            active: true,
-            sign_in_count: 1,
-        }
+    // fn build_user(email: String, username: String) -> User {    // Здесь build_user возвращает экземпляр структуры User с 
+    //     User {                                                  // заданной электронной почтой и именем пользователя
+    //         email: email,                                       // Поле active получает значение true, а sign_in_count - 1
+    //         username: username,
+    //         active: true,
+    //         sign_in_count: 1,
+    //     }
+    // }
+
+    fn build_user(email :String, username: String) -> User {
+        
     }
 }
