@@ -36,10 +36,10 @@ fn main() {
     //     }
     // }
 
-    fn build_user(email: String, username: String) -> User {
-        User {
-            email, 
-            username,
+    fn build_user(email: String, username: String) -> User {            // Поскольку имена параметров и имена полей структуры
+        User {                                                          // совпадают, можно использовать синтаксис краткой 
+            email,                                                      // инициализации полей для написания функции build_user
+            username,                                                   
             active: true,
             sign_in_count: 1,
         }
