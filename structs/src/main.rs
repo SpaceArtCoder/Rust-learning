@@ -52,4 +52,10 @@ fn main() {
         sign_in_count: user1.sign_in_count,
     }
 
+    let user2 = User {
+        email: String::from("another@example.com"),
+        username: String::from("anotherusername567"),
+        ..user1
+    };
+
 }
