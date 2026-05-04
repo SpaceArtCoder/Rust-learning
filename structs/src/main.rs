@@ -63,8 +63,9 @@ fn main() {
     };
 
     
-    struct Color(i32, i32, i32);
-    struct Point(i32, i32, i32);
+    struct Color(i32, i32, i32);                                        // Кортежные структуры полезны, когда нужно дать имя всему 
+    struct Point(i32, i32, i32);                                        // кортежу и сделать кортеж типом, отличающимся от других 
+                                                                        // кортежей
 
     let black = Color(0 ,0, 0);
     let origin = Point(0, 0, 0);
