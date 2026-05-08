@@ -89,7 +89,9 @@ fn main() {
     }
 
     fn main() {
-        
+        let user1 = User {
+            
+        }
     }
     
 }
