@@ -88,8 +88,8 @@ fn main() {
         active: bool,                                                   // были действительными до тех пор, пока она существует.
     }
 
-    fn main() {                                                         
-        let user1 = User {
+    fn main() {                                                         // При попытке сохранить ссылку в структуре без указания 
+        let user1 = User {                                              // жизненных циклов, выбросит ошибку
             email: "someone@example.com",
             username: "someusername123",
             active: true,
