@@ -87,5 +87,9 @@ fn main() {
         sign_in_count: u64,
         active: bool,
     }
+
+    fn main() {
+        
+    }
     
 }
