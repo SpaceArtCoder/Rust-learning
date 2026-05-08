@@ -81,14 +81,14 @@ fn main() {
                                                                         // ельному значению и так далее
 
     
-    struct User {
-        username: &str,
-        email: &str,
-        sign_in_count: u64,
-        active: bool,
+    struct User {                                                       // Структуры могут хранить ссылки на данные, принадлежащие
+        username: &str,                                                 // кому-то другому, но для этого требуется использование 
+        email: &str,                                                    // жизненных циклов — средства языка Rust. Жизненный цикл
+        sign_in_count: u64,                                             // обеспечивает, чтобы данные, на которые структура ссылается,
+        active: bool,                                                   // были действительными до тех пор, пока она существует.
     }
 
-    fn main() {
+    fn main() {                                                         
         let user1 = User {
             email: "someone@example.com",
             username: "someusername123",
