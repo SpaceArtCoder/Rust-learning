@@ -20,6 +20,7 @@ fn main() {
 //     width1 * height1
 // }
 
-fn area(dimensions: (u32, u32)) -> u32 {
-    dimensions.0 * dimensions.1
-}
+fn area(dimensions: (u32, u32)) -> u32 {                                                   // В данном способе существуют свои недостатки,
+    dimensions.0 * dimensions.1                                                            // так как каждый элемент кортежа не будет иметь
+                                                                                           // собственное название, что будет менее явно и 
+}                                                                                          // читаемо
