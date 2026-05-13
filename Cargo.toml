@@ -1,5 +1,5 @@
 [workspace]
 members = ["branches", "christmas_carol", "fibonacci_sequence","functions",
     "guessing_game",
-    "hello_cargo", "loops", "ownership", "structs", "temperature_conversion", "variables",
+    "hello_cargo", "loops", "ownership", "rectangles", "structs", "temperature_conversion", "variables",
 ]
