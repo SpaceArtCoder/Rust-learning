@@ -8,6 +8,6 @@ fn main() {
     );
 }
 
-fn area(width1: u32, height1: u32) -> u32 {
+fn area(width1: u32, height1: u32) -> u32 {                                             // Функция для расчета площади прямоугольника
     width1 * height1
 }
