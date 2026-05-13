@@ -8,4 +8,6 @@ fn main() {
     );
 }
 
-
+fn area(width1: u32, height1: u32) -> u32 {
+    
+}
