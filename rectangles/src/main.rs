@@ -25,11 +25,6 @@ fn main() {
 //                                                                                            // собственное название, что будет менее явно и 
 // }                                                                                          // читаемо
 
-    struct Rectangle {
-        width: u32,
-        height: u32,
-    }
-
     let rect1 = Rectangle {width: 30, height: 50};
 
     println!(
@@ -37,6 +32,11 @@ fn main() {
         area(&rect1)
     );
 
+}
+
+struct Rectangle {
+        width: u32,
+        height: u32,
 }
 
 fn area(rectangle: &Rectangle) -> u32 {
