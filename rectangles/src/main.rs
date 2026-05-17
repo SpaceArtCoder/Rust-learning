@@ -32,6 +32,9 @@ fn main() {
 
     let rect1 = Rectangle {width: 30, height: 50};
 
-    
+    println!(
+        "Площадь прямоугольника равна {} квадратным пикселям",
+        area(&rect1)
+    );
 
 }
