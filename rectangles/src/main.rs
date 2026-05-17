@@ -30,4 +30,8 @@ fn main() {
         height: u32,
     }
 
+    let rect1 = Rectangle {width: 30, height: 50};
+
+    
+
 }
