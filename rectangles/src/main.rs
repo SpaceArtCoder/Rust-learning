@@ -25,20 +25,29 @@ fn main() {
 //                                                                                            // собственное название, что будет менее явно и 
 // }                                                                                          // читаемо
 
-    let rect1 = Rectangle {width: 30, height: 50};
+//     let rect1 = Rectangle {width: 30, height: 50};
 
-    println!(
-        "Площадь прямоугольника равна {} квадратным пикселям",
-        area(&rect1)
-    );
+//     println!(
+//         "Площадь прямоугольника равна {} квадратным пикселям",
+//         area(&rect1)
+//     );
 
-}
+// }
 
-struct Rectangle {
+// struct Rectangle {
+//         width: u32,
+//         height: u32,
+// }
+
+// fn area(rectangle: &Rectangle) -> u32 {
+//     rectangle.width * rectangle.height
+// }
+
+    struct Rectangle {
         width: u32,
         height: u32,
-}
+    }
 
-fn area(rectangle: &Rectangle) -> u32 {
-    rectangle.width * rectangle.height
+    
+
 }
