@@ -42,12 +42,12 @@ fn main() {
 // fn area(rectangle: &Rectangle) -> u32 {
 //     rectangle.width * rectangle.height
 // }
-    #[derive(Debug)]
-    struct Rectangle {
-        width: u32,
-        height: u32,
-    }
-
+    #[derive(Debug)]                                                                    // Rust включает в себя функциональность печати
+    struct Rectangle {                                                                  // отладочной информации, но необходимо сделать
+        width: u32,                                                                     // эту функциональность доступной для структуры
+        height: u32,                                                                    // Для этого нужно добавить аннотацию 
+    }                                                                                   // #[derive (Debug)] непосредственно перед
+                                                                                        // определением структуры.
     let rect1 = Rectangle {width: 30, height: 50};
 
     // println!("rect1 равен {}", rect1);                                                  // С помощью макрокоманды println! вывести
