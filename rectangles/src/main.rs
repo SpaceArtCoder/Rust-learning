@@ -57,5 +57,8 @@ fn main() {
     // println!("rect1 равен {}", rect1);                                                  // С помощью макрокоманды println! вывести
                                                                                         // экземпляр структуры Rectangle не получится
 
-    println!("rect1 равен {:?}", rect1);
+    // println!("rect1 равен {:?}", rect1);
+
+    println!("rect1 равен {:#?}", rect1);   
+
 }
