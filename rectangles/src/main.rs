@@ -59,6 +59,6 @@ fn main() {
 
     // println!("rect1 равен {:?}", rect1);
 
-    println!("rect1 равен {:#?}", rect1);   
+    println!("rect1 равен {:#?}", rect1);                                               // В данном случае вывод будет легче читать
 
 }
