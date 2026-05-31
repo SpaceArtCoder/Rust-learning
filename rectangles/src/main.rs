@@ -72,4 +72,8 @@ fn main() {
             self.width * self.height
         }
     }
+
+    let rect1 = Rectangle {width: 30, height: 50};
+
+    
 }
