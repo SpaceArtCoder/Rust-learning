@@ -69,10 +69,10 @@ fn main() {
 
     impl Rectangle {                                                                       // Для того чтобы определить функцию внутри
         fn area(&self) -> u32 {                                                            // контекста структуры Rectangle, нужно 
-            self.width * self.height                                                       // начать блок impl (реализация).
-        }
-    }
-
+            self.width * self.height                                                       // начать блок impl (реализация). Затем
+        }                                                                                  // функция area переносится в фигурные 
+    }                                                                                      // скобки impl и изменяется первый параметр
+                                                                                           // на параметр self в сигнатуре и в теле
     let rect1 = Rectangle {width: 30, height: 50};
 
     println!(
