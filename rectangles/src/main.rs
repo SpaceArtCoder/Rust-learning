@@ -67,9 +67,9 @@ fn main() {
         height: u32,
     }
 
-    impl Rectangle {
-        fn area(&self) -> u32 {
-            self.width * self.height
+    impl Rectangle {                                                                       // Для того чтобы определить функцию внутри
+        fn area(&self) -> u32 {                                                            // контекста структуры Rectangle, нужно 
+            self.width * self.height                                                       // начать блок impl (реализация).
         }
     }
 
