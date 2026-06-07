@@ -93,4 +93,9 @@ fn main() {
         "Площадь прямоугольника равна {} квадратным пикселам.",                            // метода area для экземпляра структуры
         rect1.area()                                                                       // Rectangle.
     )
+
+
+    let rect1 = Rectangle {width: 30, height: 50};
+    let rect2 = Rectangle {width: 10, height: 40};
+    let rect3 = Rectangle {width: 60, height: 45};
 }
