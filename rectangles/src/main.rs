@@ -103,6 +103,10 @@ fn main() {
         fn area(&self) -> u32 {
             self.width * self.height
         }
+
+        fn can_hold(&self, other: &Rectangle) -> bool {
+            
+        }
     }
 
     let rect1 = Rectangle {width: 30, height: 50};
