@@ -101,7 +101,7 @@ fn main() {
 
     impl Rectangle {
         fn area(&self) -> u32 {
-            
+            self.width * self.height
         }
     }
 
