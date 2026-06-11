@@ -104,10 +104,11 @@ fn main() {
             self.width * self.height
         }
 
-        fn can_hold(&self, other: &Rectangle) -> bool {
-            self.width > other.width && self.height > other.height
-        }
-    }
+        fn can_hold(&self, other: &Rectangle) -> bool {                                       // Здесь представлена реализация метода
+            self.width > other.width && self.height > other.height                            // can_hold в структуре Rectangle, 
+        }                                                                                     // который берет еще один экземпляр
+    }                                                                                         // структуры Rectangle в качестве 
+                                                                                              // параметра.
 
     let rect1 = Rectangle {width: 30, height: 50};
     let rect2 = Rectangle {width: 10, height: 40};
