@@ -118,9 +118,9 @@ fn main() {
     // println!("Может ли rect1 содержать в себе rect3? {}", rect1.can_hold(&rect3));
 
 
-    impl Rectangle {
-        fn aquare(size: u32) -> Rectangle {
-            Rectangle {width: size, height: size}
-        }
+    impl Rectangle {                                                                            // Ниже представлена связанная функция
+        fn aquare(size: u32) -> Rectangle {                                                     // Она так называется поскольку она 
+            Rectangle {width: size, height: size}                                               // присоединена к структуре.
+        }                                                                                       
     }
 }
