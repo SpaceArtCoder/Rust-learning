@@ -119,7 +119,7 @@ fn main() {
 
 
     impl Rectangle {                                                                            // Ниже представлена связанная функция
-        fn aquare(size: u32) -> Rectangle {                                                     // Она так называется поскольку она 
+        fn square(size: u32) -> Rectangle {                                                     // Она так называется поскольку она 
             Rectangle {width: size, height: size}                                               // присоединена к структуре.
         }                                                                                       // Такие функции по-прежнему остаются    
     }                                                                                           // функциями, а не методами, потому что
@@ -137,6 +137,6 @@ fn main() {
         height: u32,
     }
 
-    println!("rectangles is {}", Rectangle::square());
+    println!("rectangles is {:?}", Rectangle::square(4));
 
 }
