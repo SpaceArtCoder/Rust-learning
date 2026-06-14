@@ -145,9 +145,9 @@ fn main() {
                                                                                                 // связанных функций, так и для пространств
                                                                                                 // имен, создаваемых модулями.
 
-    impl Rectangle {
-        fn area(&self) -> u32 {
-            self.width * self.height
+    impl Rectangle {                                                                            // Каждая структура может иметь несколько
+        fn area(&self) -> u32 {                                                                 // блоков impl.
+            self.width * self.height                                                            
         }
     }
 
