@@ -137,6 +137,8 @@ fn main() {
         height: u32,
     }
 
-    println!("rectangles is {:?}", Rectangle::square(4));
+    println!("rectangles is {:?}", Rectangle::square(4));                                       // Для вызова связанной функции исполь-
+                                                                                                // зуется синтаксис :: с именем структуры
+                                                                                                
 
 }
