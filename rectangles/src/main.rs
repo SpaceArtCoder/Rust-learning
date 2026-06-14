@@ -137,5 +137,6 @@ fn main() {
         height: u32,
     }
 
+    println!("rectangles is {}", Rectangle::square());
 
 }
