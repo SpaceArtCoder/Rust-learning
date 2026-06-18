@@ -6,4 +6,6 @@ fn main() {
 
 
     let four = IpAddrKind::v4;
+    let six = ipAddrKind::v6;
+    
 }
