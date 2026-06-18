@@ -14,5 +14,5 @@ fn main() {
     }
 
     route(ipAddrKind::v4);
-
+    route(ipAddrKind::v6);
 }
