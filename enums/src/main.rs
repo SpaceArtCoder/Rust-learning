@@ -5,8 +5,8 @@ fn main() {
     }
 
 
-    let four = IpAddrKind::v4;
-    let six = ipAddrKind::v6;
+    let four = IpAddrKind::v4;                                          // Так происходит создание экземпляров каждого
+    let six = ipAddrKind::v6;                                           // из двух вариантов перечисления
 
 
     fn route(ip_kind: ipAddrKind) {
