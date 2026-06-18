@@ -11,7 +11,9 @@ fn main() {
                                                                         // находятся в пространстве имен IpAddrKInd, и для 
                                                                         // отделения их друг от друга используется 
                                                                         // синтаксис ::
-                                                                        
+                                                                        // Теперь оба значения, IpAddrKind::v4 и 
+                                                                        // ipAddrKind::v6, имеют один и тот же тип: 
+                                                                        // ipAddrKind
 
     fn route(ip_kind: ipAddrKind) {
 
