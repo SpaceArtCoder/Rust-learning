@@ -28,9 +28,9 @@ fn main() {
         V6,
     }
 
-    struct IpAddr {
-        kind: IpAddrKInd,
-        address: String,
+    struct IpAddr {                                                                     // Структура используется здесь для 
+        kind: IpAddrKInd,                                                               // компоновки значений вида и адреса
+        address: String,                                                                // вместе
     }
 
     let home = IpAddr {
