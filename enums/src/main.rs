@@ -23,25 +23,32 @@ fn main() {
     // route(IpAddrKind::v6);
 
 
-    enum IpAddrKInd {
-        V4,
-        V6,
+    // enum IpAddrKInd {
+    //     V4,
+    //     V6,
+    // }
+
+    // struct IpAddr {                                                                     // Структура используется здесь для 
+    //     kind: IpAddrKInd,                                                               // компоновки значений вида и адреса
+    //     address: String,                                                                // вместе
+    // }
+
+    // let home = IpAddr {
+    //     kind: IpAddrKInd::V4,
+    //     address: String::from("127.0.0.1"),
+    // };
+
+
+    // let loopback = IpAddr {
+    //     kind: IpAddrKInd::V6,
+    //     address: String::from("::1"),
+    // };
+
+
+    enum IpAddr {
+        V4(String),
+        V6(String),
     }
-
-    struct IpAddr {                                                                     // Структура используется здесь для 
-        kind: IpAddrKInd,                                                               // компоновки значений вида и адреса
-        address: String,                                                                // вместе
-    }
-
-    let home = IpAddr {
-        kind: IpAddrKInd::V4,
-        address: String::from("127.0.0.1"),
-    };
-
-
-    let loopback = IpAddr {
-        kind: IpAddrKInd::V6,
-        address: String::from("::1"),
-    };
+    
 
 }
