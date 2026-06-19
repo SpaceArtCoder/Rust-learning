@@ -28,5 +28,10 @@ fn main() {
         V6,
     }
 
-    
+    struct IpAddr {
+        kind: IpAddrKInd,
+        address: String,
+    }
+
+
 }
