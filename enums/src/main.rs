@@ -33,5 +33,12 @@ fn main() {
         address: String,
     }
 
+    let home = IpAddr {
+        kind: IpAddrKInd::V4,
+        address: String::from("127.0.0.1"),
+    };
+
+    
+
 
 }
