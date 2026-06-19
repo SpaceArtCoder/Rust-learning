@@ -38,7 +38,10 @@ fn main() {
         address: String::from("127.0.0.1"),
     };
 
-    
 
+    let loopback = IpAddr {
+        kind: IpAddrKInd::V6,
+        address: String::from("::1"),
+    };
 
 }
