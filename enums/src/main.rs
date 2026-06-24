@@ -90,8 +90,8 @@ fn main() {
 
 
     enum Message {
-        Quit,
-        Move {x: i32, y: i32},
+        Quit,                                                                                        // Quit не имеет связанных данных
+        Move {x: i32, y: i32},                                                                       // 
         Write(String),
         ChangeColor(i32, i32, i32),
     }
