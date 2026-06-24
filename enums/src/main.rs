@@ -72,6 +72,8 @@ fn main() {
         // --skip
     }
 
-    
+    struct Ipv6Addr {
+        // --skip
+    }
 
 }
