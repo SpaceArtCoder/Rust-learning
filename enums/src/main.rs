@@ -90,9 +90,9 @@ fn main() {
 
 
     enum Message {
-        Quit,                                                                                        // Quit не имеет связанных данных
-        Move {x: i32, y: i32},                                                                       // 
-        Write(String),
-        ChangeColor(i32, i32, i32),
+        Quit,                                                                               // Quit не имеет связанных данных
+        Move {x: i32, y: i32},                                                              // Move включает в себя анонимную структуру
+        Write(String),                                                                      // Write включает в себя одно значение String
+        ChangeColor(i32, i32, i32),                                                         // ChangeColor включает в себя три значения i32
     }
 }
