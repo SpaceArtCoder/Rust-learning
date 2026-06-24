@@ -89,10 +89,19 @@ fn main() {
     //                                                                                               // еще одно перечисление.
 
 
-    enum Message {
-        Quit,                                                                               // Quit не имеет связанных данных
-        Move {x: i32, y: i32},                                                              // Move включает в себя анонимную структуру
-        Write(String),                                                                      // Write включает в себя одно значение String
-        ChangeColor(i32, i32, i32),                                                         // ChangeColor включает в себя три значения i32
+    // enum Message {
+    //     Quit,                                                                               // Quit не имеет связанных данных
+    //     Move {x: i32, y: i32},                                                              // Move включает в себя анонимную структуру
+    //     Write(String),                                                                      // Write включает в себя одно значение String
+    //     ChangeColor(i32, i32, i32),                                                         // ChangeColor включает в себя три значения i32
+
+
+    struct QuitMessage; // пустая структура
+    struct MoveMessage {
+        x: i32,
+        y: i32,
     }
+    struct WriteMessage(String);              // кортежная структура
+    struct ChangeColorMessage(i32, i32, i32); // кортежная структура
+    
 }
