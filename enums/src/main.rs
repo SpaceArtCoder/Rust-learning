@@ -110,4 +110,7 @@ fn main() {
             // method body
         }
     }
+
+    let m = Message::Write(String::from("hello"));
+    
 }
