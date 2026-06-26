@@ -105,11 +105,11 @@ fn main() {
     // struct ChangeColorMessage(i32, i32, i32); // кортежная структура
     
 
-    impl Message {
-        fn call(&self) {
-            // method body
-        }
-    }
+    impl Message {                                                                             // Между перечислениями и структурами 
+        fn call(&self) {                                                                       // существует сходство: для перечислений
+            // method body                                                                     // можно определять методы с помощью 
+        }                                                                                      // ключевого слова impl точно так же, как
+    }                                                                                          // для структур.
 
     let m = Message::Write(String::from("hello"));
     m.call();
