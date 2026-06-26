@@ -96,12 +96,18 @@ fn main() {
     //     ChangeColor(i32, i32, i32),                                                         // ChangeColor включает в себя три значения i32
 
 
-    struct QuitMessage; // пустая структура
-    struct MoveMessage {
-        x: i32,
-        y: i32,
-    }
-    struct WriteMessage(String);              // кортежная структура
-    struct ChangeColorMessage(i32, i32, i32); // кортежная структура
+    // struct QuitMessage; // пустая структура
+    // struct MoveMessage {
+    //     x: i32,
+    //     y: i32,
+    // }
+    // struct WriteMessage(String);              // кортежная структура
+    // struct ChangeColorMessage(i32, i32, i32); // кортежная структура
     
+
+    impl Message {
+        fn call(&self) {
+            // method body
+        }
+    }
 }
