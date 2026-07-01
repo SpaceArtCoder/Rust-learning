@@ -134,9 +134,11 @@ fn main() {
     //                                                                                               // прежнему варианты типа Option<T>
 
     
-    let some_number = Some(5);
-    let some_string = Some("строковый литерал");
-
-    let adsent_number: Option<i32> = None;
+    let some_number = Some(5);                                                                       // Синтаксис <T> является средством языка
+    let some_string = Some("строковый литерал");                                                     // Rust. Это параметр обобщенного типа
+                                                                                                     // <T< означает, что вариант Some 
+    let adsent_number: Option<i32> = None;                                                           // перечисления Option может содержать
+                                                                                                     // один фрагмент данных любого типа
+                                                                                                     
 
 }
