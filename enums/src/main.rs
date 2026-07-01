@@ -137,4 +137,6 @@ fn main() {
     let some_number = Some(5);
     let some_string = Some("строковый литерал");
 
+    let adsent_number: Option<i32> = None;
+
 }
