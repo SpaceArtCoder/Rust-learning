@@ -172,9 +172,9 @@ fn main() {
         Quarter,                                                                          // код, основываясь на том, какой паттерн совпа-
     }                                                                                     // дает.
 
-    fn value_in_cents(coin: Coin) -> u8 {
-        match coin {
-            Coin::Penny => 1,
+    fn value_in_cents(coin: Coin) -> u8 {                                                 // Данная функция берет неизвестную монету США
+        match coin {                                                                      // и, подобно счетной машине, выясняет номинал
+            Coin::Penny => 1,                                                             // этой монеты и возвращает его в центах.
             Coin::Nickel => 5,
             Coin::Dime => 10,
             Coin::Quarter => 25,
