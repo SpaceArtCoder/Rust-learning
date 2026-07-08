@@ -182,10 +182,10 @@ fn main() {
     // }                                                                                     // данном примере является перечисление Coin
 
 
-    fn value_in_cents(coin: Coin) -> u8 {
-        match coin {
-            Coin::Penny => {
-                println!("Монетка на счастье!");
+    fn value_in_cents(coin: Coin) -> u8 {                                                    // Этот код будет выводить содержимое макро-
+        match coin {                                                                         // команды println! всякий раз, когда метод
+            Coin::Penny => {                                                                 // вызывается с Coin::Penny, но все равно 
+                println!("Монетка на счастье!");                                             // возвращать последнее значение блока 1
                 1
             },
             Coin::Nickel => 5,
