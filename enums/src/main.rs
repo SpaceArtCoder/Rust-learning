@@ -202,4 +202,11 @@ fn main() {
         Alaska,
         //--Skip
     }
+
+    enum Coin {
+        Penny,
+        Nickel,
+        Dime, 
+        Quarter(UsState),
+    }
 }
