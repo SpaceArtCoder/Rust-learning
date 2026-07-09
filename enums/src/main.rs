@@ -181,7 +181,7 @@ fn main() {
     //     }                                                                                 // быть любого типа. Типом переменной coin в 
     // }                                                                                     // данном примере является перечисление Coin
 
-
+/*
     fn value_in_cents(coin: Coin) -> u8 {                                                    // Этот код будет выводить содержимое макро-
         match coin {                                                                         // команды println! всякий раз, когда метод
             Coin::Penny => {                                                                 // вызывается с Coin::Penny, но все равно 
@@ -192,5 +192,14 @@ fn main() {
             Coin::Dime => 10,
             Coin::Quarter => 25,
         }
+    }
+*/
+
+
+    #[derive(Debug)]
+    enum UsState {
+        Alabama,
+        Alaska,
+        //--Skip
     }
 }
