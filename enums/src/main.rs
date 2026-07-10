@@ -221,4 +221,6 @@ fn main() {
             },
         }
     }
+
+    value_in_cents(Coin::Quarter(UsState::Alaska));
 }
