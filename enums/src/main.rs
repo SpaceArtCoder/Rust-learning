@@ -210,9 +210,9 @@ fn main() {
         Quarter(UsState),
     }
 
-    fn value_in_cents(coin: Coin) -> u8 {
-        match coin {
-            Coin::Penny => 1,
+    fn value_in_cents(coin: Coin) -> u8 {                                                   // Здесь в паттерн выражения match добавляется
+        match coin {                                                                        // переменная state, паттерн сопоставляется со
+            Coin::Penny => 1,                                                               // значениями варианта Coin::Quarter.
             Coin::Nickel => 5,
             Coin::Dime => 10,
             Coin::Quarter(state) => {
