@@ -196,31 +196,35 @@ fn main() {
 */
 
 
-    #[derive(Debug)]
-    enum UsState {
-        Alabama,
-        Alaska,
-        //--Skip
-    }
+    // #[derive(Debug)]
+    // enum UsState {
+    //     Alabama,
+    //     Alaska,
+    //     //--Skip
+    // }
 
-    enum Coin {
-        Penny,
-        Nickel,
-        Dime, 
-        Quarter(UsState),
-    }
+    // enum Coin {
+    //     Penny,
+    //     Nickel,
+    //     Dime, 
+    //     Quarter(UsState),
+    // }
 
-    fn value_in_cents(coin: Coin) -> u8 {                                                   // Здесь в паттерн выражения match добавляется
-        match coin {                                                                        // переменная state, паттерн сопоставляется со
-            Coin::Penny => 1,                                                               // значениями варианта Coin::Quarter.
-            Coin::Nickel => 5,
-            Coin::Dime => 10,
-            Coin::Quarter(state) => {
-                println!("Четвертак из штата {:?}!", state);
-                25
-            },
-        }
-    }
+    // fn value_in_cents(coin: Coin) -> u8 {                                                   // Здесь в паттерн выражения match добавляется
+    //     match coin {                                                                        // переменная state, паттерн сопоставляется со
+    //         Coin::Penny => 1,                                                               // значениями варианта Coin::Quarter.
+    //         Coin::Nickel => 5,
+    //         Coin::Dime => 10,
+    //         Coin::Quarter(state) => {
+    //             println!("Четвертак из штата {:?}!", state);
+    //             25
+    //         },
+    //     }
+    // }
 
-    value_in_cents(Coin::Quarter(UsState::Alaska));
+    // value_in_cents(Coin::Quarter(UsState::Alaska));
+
+
+                                                                                               // Можно обрабатывать Option<T>, используя
+                                                                                               // выражение match. 
 }
