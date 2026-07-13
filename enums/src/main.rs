@@ -228,12 +228,12 @@ fn main() {
                                                                                                // Можно обрабатывать Option<T>, используя
                                                                                                // выражение match. 
 
-    fn plus_one(x: Option<i32>) -> Option<i32> {
-        match x {
-            None => None,
-            Some(i) => Some(i + 1),
-        }
-    }
+    fn plus_one(x: Option<i32>) -> Option<i32> {                                               // Данная функция берет перечисление 
+        match x {                                                                              // Option<i32> и, если внутри есть значение,
+            None => None,                                                                      // то эта функция прибавляет к нему 1.
+            Some(i) => Some(i + 1),                                                            // Если внутри нет значения, то она должна
+        }                                                                                      // возвращать значение None и не выполнять
+    }                                                                                          // какие-либо операции.
 
     let five = Some(5);
     let six = plus_one(five); 
