@@ -240,7 +240,7 @@ fn main() {
 //     let none = plus_one(None);
 
 
-    fn plus_one(x: Option<i32>) -> Option<i32> {
+    fn plus_one(x: Option<i32>) -> Option<i32> {  // Указанный код вызовет ошибку, так как не учитывается случай None
         match x {
             Some(i) => Some(i + 1),
         }
