@@ -263,4 +263,8 @@ fn main() {
         _ => (),
     }
 
+
+    if let Some(3) = some_u8_value {
+        println!("три");
+    }
 }
