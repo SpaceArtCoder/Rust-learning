@@ -275,5 +275,12 @@ fn main() {
         _ => count += 1,
     }
 
-    
+    let mut count = 0;
+    if let Coin::Quarter(state) = coin {
+        println!("Четвертак из штата {:?}!", state);
+    } else {
+        count += 1;
+    }
+
+
 }
