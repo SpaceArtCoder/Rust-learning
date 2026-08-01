@@ -274,4 +274,6 @@ fn main() {
         Coin::Quarter(state) => println!("Четвертак из штата {:?}!", state),
         _ => count += 1,
     }
+
+    
 }
