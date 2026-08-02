@@ -269,18 +269,25 @@ fn main() {
     // }
 
 
-    let mut count = 0;
-    match coin {
-        Coin::Quarter(state) => println!("Четвертак из штата {:?}!", state),
-        _ => count += 1,
+    // let mut count = 0;
+    // match coin {
+    //     Coin::Quarter(state) => println!("Четвертак из штата {:?}!", state),
+    //     _ => count += 1,
+    // }
+
+    fn en(coin: Coin) -> u8 {
+        match coin {
+            Coin::Quarter(state) => println!("Четвертак из штата {:?}!", state),
+            _ => count += 1,
+        }
     }
 
-    let mut count = 0;
-    if let Coin::Quarter(state) = coin {
-        println!("Четвертак из штата {:?}!", state);
-    } else {
-        count += 1;
-    }
+    // let mut count = 0;
+    // if let Coin::Quarter(state) = coin {
+    //     println!("Четвертак из штата {:?}!", state);
+    // } else {
+    //     count += 1;
+    // }
 
 
 }
