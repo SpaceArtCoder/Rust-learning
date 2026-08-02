@@ -196,19 +196,19 @@ fn main() {
 */
 
 
-    // #[derive(Debug)]
-    // enum UsState {
-    //     Alabama,
-    //     Alaska,
-    //     //--Skip
-    // }
+    #[derive(Debug)]
+    enum UsState {
+        Alabama,
+        Alaska,
+        //--Skip
+    }
 
-    // enum Coin {
-    //     Penny,
-    //     Nickel,
-    //     Dime, 
-    //     Quarter(UsState),
-    // }
+    enum Coin {
+        Penny,
+        Nickel,
+        Dime, 
+        Quarter(UsState),
+    }
 
     // fn value_in_cents(coin: Coin) -> u8 {                                                   // Здесь в паттерн выражения match добавляется
     //     match coin {                                                                        // переменная state, паттерн сопоставляется со
@@ -275,21 +275,21 @@ fn main() {
     //     _ => count += 1,
     // }
 
-    fn en(coin: Coin) -> u8 {
-        match coin {
-            Coin::Quarter(state) => println!("Четвертак из штата {:?}!", state),
-            _ => count += 1,
-        }
-    }
-
-    
-
-    // let mut count = 0;
-    // if let Coin::Quarter(state) = coin {
-    //     println!("Четвертак из штата {:?}!", state);
-    // } else {
-    //     count += 1;
+    // fn en(coin: Coin) -> u8 {
+    //     match coin {
+    //         Coin::Quarter(state) => println!("Четвертак из штата {:?}!", state),
+    //         _ => count += 1,
+    //     }
     // }
+
+
+
+    let mut count = 0;
+    if let Coin::Quarter(state) = coin {
+        println!("Четвертак из штата {:?}!", state);
+    } else {
+        count += 1;
+    }
 
 
 }
