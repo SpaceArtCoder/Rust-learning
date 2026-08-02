@@ -196,19 +196,19 @@ fn main() {
 */
 
 
-    #[derive(Debug)]
-    enum UsState {
-        Alabama,
-        Alaska,
-        //--Skip
-    }
+    // #[derive(Debug)]
+    // enum UsState {
+    //     Alabama,
+    //     Alaska,
+    //     //--Skip
+    // }
 
-    enum Coin {
-        Penny,
-        Nickel,
-        Dime, 
-        Quarter(UsState),
-    }
+    // enum Coin {
+    //     Penny,
+    //     Nickel,
+    //     Dime, 
+    //     Quarter(UsState),
+    // }
 
     // fn value_in_cents(coin: Coin) -> u8 {                                                   // Здесь в паттерн выражения match добавляется
     //     match coin {                                                                        // переменная state, паттерн сопоставляется со
