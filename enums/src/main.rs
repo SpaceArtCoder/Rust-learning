@@ -284,7 +284,7 @@ fn main() {
 
 
 
-    let mut count = 0;
+    let mut count = 0;                                              // В ситуации, когда логика программы слишком многословна, чтобы выразить ее с помощью match, в арсенале Rust всегда есть if let
     if let Coin::Quarter(state) = coin {
         println!("Четвертак из штата {:?}!", state);
     } else {
