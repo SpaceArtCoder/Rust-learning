@@ -16,13 +16,14 @@ mod front_of_house {                // Модуль определяется с 
 
 
 // crate                            // Стоит упомянуть, что src/main.rs и src/lib.rs называются корнями упаковки потому что, содержимое любого из этих двух
-// └── front_of_house               // файлов формирует модуль с именем crate ("упаковка") в корне модульной упаковочной структуры, именуемой деревом модулей
-// ├── hosting
-// |
-// ├── add_to_waitlist
-// |
-// └── seat_at_table
-// └── serving
-// ├── take_order
-// ├── serve_order
-// └── take_payment
+//  └── front_of_house               // файлов формирует модуль с именем crate ("упаковка") в корне модульной упаковочной структуры, именуемой деревом модулей
+//      ├── hosting
+//          |
+//          ├── add_to_waitlist
+//          |
+//          └── seat_at_table
+//      └── serving
+//          ├── take_order
+//          ├── serve_order
+//          └── take_payment
+
