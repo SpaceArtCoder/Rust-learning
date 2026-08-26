@@ -38,7 +38,7 @@ pub fn eat_at_restaurant() {                               // Так как фу
     // Абсолютный путь                                     // для начала абсолютного пути
     crate::front_of_house::hosting::add_to_waitlist();
 
-    // Относительный путь
+    // Относительный путь                                  // Относительный путь здесь начинается с имени модуля, определенного на том же уровне дерева модулей, что и eat_at_restaurant
     front_of_house::hosting::add_to_waitlist();
 }
 
