@@ -28,7 +28,7 @@
 //          └── take_payment
 
 
-mod front_of_house {
+mod front_of_house {                                       // Функция eat_at_restaurant является частью публичного API библиотечной упаковки, поэтому она помечается ключевым словом pub
     mod hosting {
         fn add_to_waitlist() {}
     }
