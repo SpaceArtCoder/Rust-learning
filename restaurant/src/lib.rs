@@ -34,8 +34,8 @@ mod front_of_house {                                       // Функция eat
     }
 }
 
-pub fn eat_at_restaurant() {
-    // Абсолютный путь
+pub fn eat_at_restaurant() {                               // Так как функция add_to_waitlist определена в той же упаковке, что и функция eat_at_restaurant, то можно использовать ключевое слово crate
+    // Абсолютный путь                                     // для начала абсолютного пути
     crate::front_of_house::hosting::add_to_waitlist();
 
     // Относительный путь
