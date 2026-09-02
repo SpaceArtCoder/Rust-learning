@@ -39,8 +39,8 @@ pub fn eat_at_restaurant() {                               // Так как фу
     crate::front_of_house::hosting::add_to_waitlist();
 
     // Относительный путь                                  // Относительный путь здесь начинается с имени модуля, определенного на том же уровне дерева модулей, что и eat_at_restaurant
-    front_of_house::hosting::add_to_waitlist();
-}
+    front_of_house::hosting::add_to_waitlist();            // Данный код вызовет ошибку так как модуль hosting является конфиденциальным и Rust не позволит использовать его, потому что у него нет доступа
+}                                                          // к конфиденциальным разделам
 
 
 
