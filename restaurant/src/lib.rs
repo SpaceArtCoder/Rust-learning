@@ -54,7 +54,19 @@
 // Но это можно изменить, использовав ключевое слово pub и сделав тем самым элемент публичным
 
 
+mod front_of_house {
+    pub mod hosting {
+        fn add_to_waitlist() {}
+    }
+}
 
+pub fn eat_at_restaurant() {
+    // Абсолютный путь
+    crate::front_of_house::hosting::add_to_waitlist();
+
+    // Относительный путь
+    front_of_house::hosting::add_to_waitlist();
+}
 
 
 
