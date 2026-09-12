@@ -27,22 +27,22 @@
 //          ├── serve_order
 //          └── take_payment
 
-
-
-mod front_of_house {                                       // Функция eat_at_restaurant является частью публичного API библиотечной упаковки, поэтому она помечается ключевым словом pub
-    pub mod hosting {
-        pub fn add_to_waitlist() {}
+    fn main() {
+        
     }
-}
 
-pub fn eat_at_restaurant() {                               // Так как функция add_to_waitlist определена в той же упаковке, что и функция eat_at_restaurant, то можно использовать ключевое слово crate
-    // Абсолютный путь                                     // для начала абсолютного пути
-    crate::front_of_house::hosting::add_to_waitlist();
+    mod front_of_house {                                       // Функция eat_at_restaurant является частью публичного API библиотечной упаковки, поэтому она помечается ключевым словом pub
+        pub mod hosting {
+            pub fn add_to_waitlist() {}
+        }
+    }
 
-    // Относительный путь                                  // Относительный путь здесь начинается с имени модуля, определенного на том же уровне дерева модулей, что и eat_at_restaurant
-    front_of_house::hosting::add_to_waitlist();
-}
+    pub fn eat_at_restaurant() {                               // Так как функция add_to_waitlist определена в той же упаковке, что и функция eat_at_restaurant, то можно использовать ключевое слово crate
+        // Абсолютный путь                                     // для начала абсолютного пути
+        crate::front_of_house::hosting::add_to_waitlist();
 
-
+        // Относительный путь                                  // Относительный путь здесь начинается с имени модуля, определенного на том же уровне дерева модулей, что и eat_at_restaurant
+        front_of_house::hosting::add_to_waitlist();
+    }
 
 
