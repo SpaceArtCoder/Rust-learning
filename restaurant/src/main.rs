@@ -75,4 +75,12 @@
         }
     }
 
+    pub fn eat_at_restaurant() {
+        // Заказать летом завтрак с ржаным тостом
+        let mut meal = back_of_house::Breakfast::summer("ржаной");
+        // Изменить мнение о том, какой хлеб мы бы хотели
+        meal.toast = String::from("пшеничный");
+        println!("Я бы хотел {} тост, пожалуйста", meal.toast);
+    }
+
     
