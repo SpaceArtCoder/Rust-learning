@@ -88,4 +88,4 @@
         // meal.seasonal_fruit = String::from("черника");
     }
 
-    
+    // Поскольку поле toast...
