@@ -73,6 +73,11 @@
                 }
             }
         }
+
+        pub enum Appetizer {
+            Soup,
+            Salad,
+        }
     }
 
     pub fn eat_at_restaurant() {
@@ -85,7 +90,10 @@
         // Следующая строка не будет компилироваться, если мы раскомментируем ее;
         // нам запрещено просматривать или изменять сезонные фрукты,
         // которые принесут с едой
-        meal.seasonal_fruit = String::from("черника");
+        // meal.seasonal_fruit = String::from("черника");
+
+        let order1 = back_of_house::Appetizer::Soup;
+        let order2 = back_of_house::Appetizer::Salad;
     }
 
     // Поскольку поле toast...
