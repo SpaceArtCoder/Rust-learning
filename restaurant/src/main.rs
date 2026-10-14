@@ -103,9 +103,9 @@
         }
     }
 
-    use crate::front_of_house::hosting;
-
-    pub fn eat_at_restaurant() {
+    use crate::front_of_house::hosting;     // Бдагодаря добавлению use crate::front_of_house::hosting в корень упаковки 
+                                            // модуль  hosting сейчас является допустимым именем в этой области видимости, 
+    pub fn eat_at_restaurant() {            // как будто модуль hosting был определен в корне упаковки
         hosting::add_to_waitlist();
         hosting::add_to_waitlist();
         hosting::add_to_waitlist();
