@@ -97,7 +97,7 @@
     // }
 
 
-    mod front_of_house {
+    /*mod front_of_house {
         pub mod hosting {
             pub fn add_to_waitlist() {}
         }
@@ -110,5 +110,19 @@
         hosting::add_to_waitlist();         // любые другие пути
         hosting::add_to_waitlist();
     }
+    */
 
-    
+
+    mod front_of_house {
+        pub mod hosting {
+            pub fn add_to_waitlist() {}
+        }
+    }
+
+    use self::front_of_house::hosting;
+
+    pub fn eat_at_restaurant() {            // Вместо того, чтобы начинать с имени в текущей области видимости, нужно начинать
+        hosting::add_to_waitlist();         // путь, переданный инструкции use, с ключевого слова self
+        hosting::add_to_waitlist();         // Следует обратить внимание, что подобное использование self в будущем может не 
+        hosting::add_to_waitlist();         // понадобиться. Оно представляет собой нестыковку в языке, над устранением которой
+    }                                       // работают разработчики Rust
