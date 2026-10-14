@@ -59,41 +59,54 @@
 
 // Листинг 7.9. Структура, в которой несколько публичных и конфиденциальных полей
 
-    mod back_of_house {                                             // Также можно использовать ключевое слово pub для обозначения структур и перечислений как публичных
-        pub struct Breakfast {                                      // Если pub используется перед определением структуры, то структура становится публичной, но поля
-            pub toast: String,                                     // структуры все равно будут конфиденциальными. Напротив, можно сделать каждое поле публичным на
-            seasonal_fruit: String,                                 // индивидуальной основе
-        }
+    // mod back_of_house {                                             // Также можно использовать ключевое слово pub для обозначения структур и перечислений как публичных
+    //     pub struct Breakfast {                                      // Если pub используется перед определением структуры, то структура становится публичной, но поля
+    //         pub toast: String,                                     // структуры все равно будут конфиденциальными. Напротив, можно сделать каждое поле публичным на
+    //         seasonal_fruit: String,                                 // индивидуальной основе
+    //     }
 
-        impl Breakfast {
-            pub fn summer(toast: &str) -> Breakfast {
-                Breakfast {
-                    toast: String::from(toast),
-                    seasonal_fruit: String::from("персики"),
-                }
-            }
-        }
+    //     impl Breakfast {
+    //         pub fn summer(toast: &str) -> Breakfast {
+    //             Breakfast {
+    //                 toast: String::from(toast),
+    //                 seasonal_fruit: String::from("персики"),
+    //             }
+    //         }
+    //     }
 
-        pub enum Appetizer {                                            // Напротив, если сделать перечисление публичным, то тогда все его варианты будут публичными, в отличии от полей структуры
-            Soup,
-            Salad,
+    //     pub enum Appetizer {                                            // Напротив, если сделать перечисление публичным, то тогда все его варианты будут публичными, в отличии от полей структуры
+    //         Soup,
+    //         Salad,
+    //     }
+    // }
+
+    // pub fn eat_at_restaurant() {
+    //     // Заказать летом завтрак с ржаным тостом
+    //     let mut meal = back_of_house::Breakfast::summer("ржаной");
+    //     // Изменить мнение о том, какой хлеб мы бы хотели
+    //     meal.toast = String::from("пшеничный");
+    //     println!("Я бы хотел {} тост, пожалуйста", meal.toast);
+
+    //     // Следующая строка не будет компилироваться, если мы раскомментируем ее;
+    //     // нам запрещено просматривать или изменять сезонные фрукты,
+    //     // которые принесут с едой
+    //     // meal.seasonal_fruit = String::from("черника");
+
+    //     let order1 = back_of_house::Appetizer::Soup;
+    //     let order2 = back_of_house::Appetizer::Salad;
+    // }
+
+
+    mod front_of_house {
+        pub mod hosting {
+            pub fn add_to_waitlist() {}
         }
     }
+
+    use crate::front_of_house::hosting;
 
     pub fn eat_at_restaurant() {
-        // Заказать летом завтрак с ржаным тостом
-        let mut meal = back_of_house::Breakfast::summer("ржаной");
-        // Изменить мнение о том, какой хлеб мы бы хотели
-        meal.toast = String::from("пшеничный");
-        println!("Я бы хотел {} тост, пожалуйста", meal.toast);
-
-        // Следующая строка не будет компилироваться, если мы раскомментируем ее;
-        // нам запрещено просматривать или изменять сезонные фрукты,
-        // которые принесут с едой
-        // meal.seasonal_fruit = String::from("черника");
-
-        let order1 = back_of_house::Appetizer::Soup;
-        let order2 = back_of_house::Appetizer::Salad;
+        hosting::add_to_waitlist();
+        hosting::add_to_waitlist();
+        hosting::add_to_waitlist();
     }
-
-    // Введение путей в область видимости с помощью ключевого слова use...
