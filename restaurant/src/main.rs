@@ -134,10 +134,10 @@
         }
     }
 
-    use self::front_of_house::hosting::add_to_waitlist;
-
-    pub fn eat_at_restaurant() {
-        add_to_waitlist();
-        add_to_waitlist();
+    use self::front_of_house::hosting::add_to_waitlist;     // Хотя оба пути выполняют одну и ту же задачу, предыдущий пример является
+                                                            // идиоматическим способом введения функции в область видимости с помощью use
+    pub fn eat_at_restaurant() {                            // Это обусловлено тем, что приходится указывать родительский модуль при 
+        add_to_waitlist();                                  // вызове функции, это дает понять, что указанная функция не определена 
+        add_to_waitlist();                                  // локально, но при этом минимизирует повторы полного пути
         add_to_waitlist();
     }
