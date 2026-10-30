@@ -166,9 +166,9 @@ fn function2() -> io::Result<()> {
 */
 
 
-use std::fmt::Result;
-use std::io::Result as IoResult;
-
+use std::fmt::Result;                               // Решение проблемы введения двух типов одного и того же имени в одну область 
+use std::io::Result as IoResult;                    // видимости с помощью use: после пути можно указать as и новое локальное имя,
+                                                    // или псевдоним, для типа
 fn function() -> Result {
 
 }
