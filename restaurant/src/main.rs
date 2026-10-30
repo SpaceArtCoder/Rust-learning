@@ -166,3 +166,13 @@ fn function2() -> io::Result<()> {
 */
 
 
+use std::fmt::Result;
+use std::io::Result as IoResult;
+
+fn function() -> Result {
+
+}
+
+fn function() -> IoResult<()> {
+
+}
