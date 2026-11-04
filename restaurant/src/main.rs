@@ -185,10 +185,12 @@ mod front_of_house {
     }
 }
 
-pub use crate::front_of_house::hosting;
-
-pub fn eat_at_restaurant() {
-    hosting::add_to_waitlist();
+pub use crate::front_of_house::hosting;           // Используя pub use, внешний код теперь может вызывать  функцию add_to_waitlist 
+                                                  // с помощью hosting::add_to_waitlist. Если бы pub use не была указана, то 
+pub fn eat_at_restaurant() {                      // функция eat_at_restaurant могла бы вызывать hosting::add_to_waitlist в своей
+    hosting::add_to_waitlist();                   // области видимости, но внешний код не смог бы воспользоваться этим новым путем
     hosting::add_to_waitlist();
     hosting::add_to_waitlist();
 }
+
+
