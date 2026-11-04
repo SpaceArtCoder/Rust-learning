@@ -178,7 +178,7 @@ fn function() -> IoResult<()> {                     // Во второй инс�
 }                                                   // в область видимости
 */
 
-
+/*
 mod front_of_house {
     pub mod hosting {
         pub fn add_to_waitlist() {}
@@ -192,5 +192,12 @@ pub fn eat_at_restaurant() {                      // функция eat_at_resta
     hosting::add_to_waitlist();
     hosting::add_to_waitlist();
 }
+*/
+
+/*
+use std::collections::HashMap;                  // Стандартная библиотека (std) также является упаковкой, внешней по отношению к 
+                                                // пакету. Поскольку стандартная библиотека поставляется с языком Rust, изменять
+                                                // Cargo.toml для включения std не нужно
+*/
 
 
