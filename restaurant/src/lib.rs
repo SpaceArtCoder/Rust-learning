@@ -75,9 +75,9 @@ mod front_of_house;                                 // Использовани�
                                                     // Rust о том, что нужно загрузить содержимое модуля из другого файла с тем же 
 pub use crate::front_of_house::hosting;             // именем, что и модуль
 
-pub fn eat_at_restaurant() {
-    hosting::add_to_waitlist();
-    hosting::add_to_waitlist();
+pub fn eat_at_restaurant() {                        // Дерево модулей остается тем же самым, а вызовы функций в eat_at_restaurant
+    hosting::add_to_waitlist();                     // будут работать без каких-либо изменений, даже если определения располагаются
+    hosting::add_to_waitlist();                     // в разных файлах
     hosting::add_to_waitlist();
 }
 
