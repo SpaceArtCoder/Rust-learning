@@ -71,9 +71,9 @@ pub fn eat_at_restaurant() {
 */
 
 
-mod front_of_house;
-
-pub use crate::front_of_house::hosting;
+mod front_of_house;                                 // Использование точки с запятой после mod front_of_house вместо блока сообщает 
+                                                    // Rust о том, что нужно загрузить содержимое модуля из другого файла с тем же 
+pub use crate::front_of_house::hosting;             // именем, что и модуль
 
 pub fn eat_at_restaurant() {
     hosting::add_to_waitlist();
