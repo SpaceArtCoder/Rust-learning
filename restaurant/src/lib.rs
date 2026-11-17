@@ -69,7 +69,7 @@ pub fn eat_at_restaurant() {
     front_of_house::hosting::add_to_waitlist();
 }
 */
-
+/*
 
 mod front_of_house;                                 // Использование точки с запятой после mod front_of_house вместо блока сообщает 
                                                     // Rust о том, что нужно загрузить содержимое модуля из другого файла с тем же 
@@ -80,4 +80,7 @@ pub fn eat_at_restaurant() {                        // Дерево модуле
     hosting::add_to_waitlist();                     // в разных файлах
     hosting::add_to_waitlist();
 }
+
+*/
+
 
